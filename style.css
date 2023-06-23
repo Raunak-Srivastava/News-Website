@@ -117,9 +117,10 @@ nav {
 main {
   padding-block: 20px;
   margin-top: 80px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 .cards-container {
@@ -130,7 +131,7 @@ main {
 }
 
 .card {
-  width: 100%;
+  width: 360px;
   min-height: 400px;
   box-shadow: 0 0 4px #000000;
   border-radius: 4px;
@@ -140,6 +141,7 @@ main {
   transition: transform 0.3s ease-in-out;
   transform-origin: center;
   position: relative;
+  
 }
 
 .card::before {
